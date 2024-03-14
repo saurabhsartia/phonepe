@@ -8,7 +8,6 @@ const config = {
 	database: "saurabh",
 };
 const con = mysql.createConnection(config);
-
 const makeDb = () => {
 	const connection = mysql.createConnection(config);
 	return {
@@ -20,5 +19,4 @@ const makeDb = () => {
 		},
 	};
 };
-
 module.exports = { con, makeDb } 
